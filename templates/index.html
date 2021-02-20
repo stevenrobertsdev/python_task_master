@@ -9,12 +9,16 @@
         <h1> Task Master</h1>
 
         {% if tasks|length < 1%}
+        <section>
+            <h4> There are no tasks. Create one below!</h4>
+        </section>
 
-        <h4> There are no tasks. Create one below!</h4>
+
 
         {% else %}
+        <section>
 
-        <table>
+             <table>
             <tr>
                 <th>Task</th>
                 <th>Added</th>
@@ -25,21 +29,29 @@
                     <td>{{ task.content }}</td>
                     <td>{{ task.date_created.date() }}</td>
                     <td>
-                        <a href="/delete/{{task.id}}">Delete</a>
-                        <br>
-                        <a href="/update/{{task.id}}">Update</a>
+                        <a href="/delete/{{task.id}}">
+                            <button class="delete"> Delete </button>
+                        </a>
+                        <a href="/update/{{task.id}}">
+                            <button class="update"> Update </button>
+                        </a>
                     </td>
                 </tr>
-            {% endfor %}
+                 {% endfor %}
         </table>
-        {% endif %}
+        </section>
 
-        <div class="form">
+
+
+
+        {% endif %}
+        <section>
             <form action="/" method="POST">
-                <input type="text" name="content" id="content">
-                <input type="submit" value="Add Task">
+                <input type="text" name="content" id="content" placeholder="Enter task here">
+                <button type="submit"> Add Task </button>
             </form>
-        </div>
+        </section>
+
 
     </div>
 

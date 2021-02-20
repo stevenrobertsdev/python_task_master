@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+body{
+  font-family: 'Nunito';
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size:40px;
+  margin-top: 80px;
+}
+
+h4{
+  text-align:center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+section{
+  width: 700px;
+  margin:30px auto;
+}
+
+ section p {
+   font-size:20px;
+   font-weight: 600;
+   margin-bottom: 15px;
+ }
+
+table{
+  width:100%;
+  margin: auto;
+}
+
+table tr {
+    width: 100%
+}
+
+table td, table th {
+    box-sizing:border-box;
+    padding: 15px;
+    max-width: 360px;
+}
+
+td a {
+    display: inline-block;
+
+}
+
+table thead th {
+    background: #000;
+      color: #fff;
+      text-align: left;
+}
+
+table tbody {
+    text-align: left;
+}
+
+table tbody th {
+background: #eee;
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    display: block;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.update {
+    background-color: #34495e;
+    color: #fff;
+}
+
+#content {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#content:focus {
+    outline-style:none;
+}
